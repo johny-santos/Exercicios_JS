@@ -23,8 +23,8 @@ const numeros = new Array(1, 2, 3, 4);
 console.log(numeros);
 
 // Array vazio e adicionando depois
-const lista = [];
-lista[0] = "Primeiro";
+const lista = []; // criei um array vazio
+lista[0] = "Primeiro"; //atribui um novo valor
 lista[1] = "Segundo";
 console.log(lista);
 
@@ -41,6 +41,7 @@ console.log(frutas);
 // -------------------------------
 
 console.log(frutas.length); // 3
+//Tamanho do array
 
 // -------------------------------
 // 4️⃣ Adicionando e removendo elementos
@@ -49,19 +50,19 @@ console.log(frutas.length); // 3
 const cores = ["Vermelho", "Verde"];
 
 // push - adiciona no final
-cores.push("Azul");
-console.log(cores);
+cores.push("Azul"); //método para adicionar um alemento na lista
+console.log(cores); 
 
 // pop - remove do final
 cores.pop();
 console.log(cores);
 
 // unshift - adiciona no início
-cores.unshift("Amarelo");
+cores.unshift("Amarelo"); //Adiciona um elemento no início da lista 
 console.log(cores);
 
 // shift - remove do início
-cores.shift();
+cores.shift(); //remove um elemento no início da lista
 console.log(cores);
 
 // -------------------------------
@@ -108,10 +109,13 @@ const encontrado = nomes.find(nome => nome.startsWith("C"));
 console.log(encontrado);
 
 // some - verifica se pelo menos 1 elemento satisfaz a condição
+//Alguns tem que atender a condição
 console.log(nomes.some(nome => nome.length > 4)); // true
 
 // every - verifica se todos satisfazem
+// Todos devem preencher a condição 
 console.log(nomes.every(nome => nome.length >= 3)); // true
+
 
 // includes - verifica se contém
 console.log(nomes.includes("Ana")); // true
@@ -127,6 +131,7 @@ console.log([...nomes].reverse());
 
 // join - junta em string
 console.log(nomes.join(", "));
+//Tira da array e coloca em string 
 
 // split (string para array)
 const texto = "a,b,c";
