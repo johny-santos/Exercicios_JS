@@ -34,7 +34,8 @@ const soma = function (a, b) {
 };
 
 console.log(soma(5, 3)); // 8
-
+    //soma meio que passa a ser a função...
+    
 // Funções em expressão NÃO sofrem hoisting da mesma forma
 // console.log(subtrair(5, 3)); // ❌ Erro
 const subtrair = function (a, b) {

@@ -33,25 +33,25 @@ console.log(pessoa2);
 function Pessoa(nome, idade) {
   this.nome = nome;
   this.idade = idade;
-}
+}                  //REVISAR ISSO AQUI
 const pessoa3 = new Pessoa("Maria", 28);
 console.log(pessoa3);
 
 // Classe (ES6):
 class PessoaClasse {
-  constructor(nome, idade) {
-    this.nome = nome;
+  constructor(nome, idade) { // cria uma lógica de inicialização
+    this.nome = nome; // inicializa as variáveis quando cria ele
     this.idade = idade;
   }
-}
-const pessoa4 = new PessoaClasse("João", 35);
+}        //pessoa4 recebe o pessoa classe para renderizar o resultado
+const pessoa4 = new PessoaClasse("João", 35); //vocÊ precisa criar esse objeto pra setar 
 console.log(pessoa4);
 
 // -------------------------------
 // 2️⃣ Acessando propriedades
 // -------------------------------
 
-const produto = {
+const produto = { //objeto literal
   nome: "Notebook",
   preco: 2500
 };
@@ -76,10 +76,10 @@ console.log(produto);
 const carro = {
   marca: "Toyota",
   modelo: "Corolla",
-  ligar: function () {
+  ligar: function () { // objetos podem ter funções
     console.log("Carro ligado!");
   },
-  desligar() {
+  desligar() { //Pode usar o nome Function ou não
     console.log("Carro desligado!");
   }
 };
@@ -155,6 +155,7 @@ const selado = { nome: "Teste" };
 Object.seal(selado);
 selado.nome = "Novo"; // ✅ altera valor existente
 // selado.sobrenome = "Outro"; // ❌ não adiciona nova propriedade
+selado.amor = "Foda-se" //Realmente não coloca...
 console.log(selado);
 
 // -------------------------------
